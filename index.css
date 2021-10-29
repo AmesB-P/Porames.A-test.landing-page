@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* .navbar{
+  position: fixed;
+  left: 12vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 80vw;
+  z-index: 999;
+} */
+img{
+    max-height: 100vh;
+    height: 100vh;
+}
+#CI,#CI2,#CI3{
+    background-color: #333;
+}
+.PicCarousel{
+opacity:0.3;
+}
+
+.box-cen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dev-text{
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 10px;
+}
+.we-are{
+    font-size: 1.5rem;
+    color: white;
+}
+.read-m,.learn-m{
+    padding: 0.5rem;
+    transform: scale(1);
+    border-radius: 5px;
+}
+.read-m{
+    margin-right: 0.3rem;
+    margin-top: 1.5rem;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+.learn-m{
+    background-color: white;
+    border:2px solid white;
+    color: black;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background: royalblue;
+    position: relative;
+}
+@media only screen and (min-width:1px) and (max-width:576px) {
+    .dev-text{
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        font-weight: bold;
+    }
+    .read-m,.learn-m{
+        margin: 0.2rem;
+    }
+}
+
+/* End first-section.css */
+
+#C-up{
+
+    background: url(https://cdn.pixabay.com/photo/2015/11/07/11/49/coffee-1031526_960_720.jpg);
+    opacity: 1;
+    color: white 
+    
+}
+.countbox{
+    background-color:#333;
+    width: 100vw;
+    opacity:0.8 ;
+    text-align: center;
+}
+
+
+
+/* count1 */
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+    #count1 {
+    animation: counter 25s infinite alternate ease-in-out;
+    counter-reset: num var(--num);
+    font: 500 2rem system-ui;
+
+  }
+  #count1::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter {
+    0%{
+      --num: 0;
+    }
+    50% {
+      --num: 242;
+    }
+    100%{
+      --num:396;
+    }
+  }
+
+  /* count2 */
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+    #count2 {
+    animation: counter 21s infinite alternate ease-in-out;
+    counter-reset: num var(--num);
+    font: 500 2rem system-ui;
+
+  }
+  #count2::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 297;
+    }
+  }
+/* count3 */
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+    #count3 {
+    animation: counter 26s infinite alternate ease-in-out;
+    counter-reset: num var(--num);
+    font: 500 2rem system-ui;
+
+  }
+  #count3::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 243;
+    }
+  }
+  /* count4 */
+  @property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+    #count4 {
+    animation: counter 20s infinite alternate ease-in-out;
+    counter-reset: num var(--num);
+    font: 500 2rem system-ui;
+
+  }
+  #count4::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 46;
+    }
+  }
+
+
+#filter-product{
+    padding: 20px;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5rem auto;
+  }
+
+  section ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+  section ul li{
+    list-style: none;
+    background-color: transparent;
+    margin: 1.5rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    
+  }
+  section ul li.active{
+    color: rgb(255, 174, 0);
+  }
+  .product{
+
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .product .itembox{
+    
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-size:auto;
+    /* margin: 5px; */
+    display: block;
+  }
+  .product .itembox.hide{
+    display:none;
+  }
+  .product .itembox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100% ;
+    object-fit: cover;
+  }
+  .filter-header{
+   font-size: 1.5rem;
+   margin-bottom: 2.5rem;
+   font-weight: bold;
+  }
+  .yelDot{
+    color: rgb(255, 166, 0);
+  }
+  .list{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+  }
+  
